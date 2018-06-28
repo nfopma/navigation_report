@@ -1,0 +1,11 @@
+<launch>
+
+  <!-- Operation with the ps3 controller -->
+  <include file="$(find turtlebot_teleop)/launch/ps3_teleop.launch" />
+
+  <!-- Visualisation in RVIZ -->
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+  args="-d $(find cartographer_turtlebot
+      )/configuration_files/demo_turtlebot.rviz" />
+
+</launch>
