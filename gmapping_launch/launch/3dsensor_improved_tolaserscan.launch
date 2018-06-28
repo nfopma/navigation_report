@@ -65,4 +65,8 @@
         <rosparam command="load" file="$(find laserscan_kinect)/config/params.yaml" />
   	</node>
   </group>
+
+  <!-- Load the tuned parameters -->
+  <node name="dynamic_reconfigure_teleop" pkg="dynamic_reconfigure" type="dynparam" args="load /laserscan_kinect $(find gmapping_launch)/params/laserscan_kinect_tuned" />
+
 </launch>

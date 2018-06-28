@@ -1,0 +1,37 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  cam_model_update: false
+  depth_img_row_step: 1
+  ground_margin: 0.1
+  ground_remove_en: true
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      cam_model_update: false
+      depth_img_row_step: 1
+      ground_margin: 0.1
+      ground_remove_en: true
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      name: Default
+      output_frame_id: camera_depth_frame
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      range_max: 3.5
+      range_min: 0.4
+      scan_height: 400
+      sensor_mount_height: 0.1
+      sensor_tilt_angle: 0.0
+      state: true
+      tilt_compensation_en: true
+      type: ''
+    state: []
+  output_frame_id: camera_depth_frame
+  range_max: 3.5
+  range_min: 0.4
+  scan_height: 400
+  sensor_mount_height: 0.1
+  sensor_tilt_angle: 0.0
+  tilt_compensation_en: true
+state: []
