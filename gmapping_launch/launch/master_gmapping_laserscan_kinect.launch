@@ -2,8 +2,8 @@
 
   <include file="$(find turtlebot_bringup)/launch/minimal.launch" />
 
-
   <!-- 3D sensor with the kinect laserscan node -->
+  <arg name="3d_sensor" default="$(env TURTLEBOT_3D_SENSOR)"/>
   <include file="$(find gmapping_launch)/launch/3dsensor_improved_tolaserscan.launch" />
 
   <!-- Gmapping -->
