@@ -3,7 +3,10 @@
   <!-- Operation with the ps3 controller -->
   <include file="$(find turtlebot_teleop)/launch/ps3_teleop.launch" />
 
-  <!-- Visualisation in RVIZ -->
+  <!-- Decrease the maximum velocity for better mapping. -->
+  <node name="dynamic_reconfigure_teleop" pkg="dynamic_reconfigure" type="dynparam" args="load /teleop_velocity_smoother $(find gmapping_launch)/params/ps3_for_mapping" />
+
+  <!-- Visualisation of the map in RVIZ -->
   <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch" />
 
 </launch>
